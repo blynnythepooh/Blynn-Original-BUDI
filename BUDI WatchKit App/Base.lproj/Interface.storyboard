@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="16097.2" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch42"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="16012"/>
+    </dependencies>
+    <scenes>
+        <!--welcomeScreen-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="welcomeScreen" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="BUDI_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <imageView width="130" height="79" alignment="center" image="rehabImage" contentMode="scaleAspectFit" id="Je9-OC-xJH"/>
+                        <label width="136" height="17" alignment="center" text="Welcome to" textAlignment="center" baselineAdjustment="alignCenters" id="MVp-Bv-Vxk">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="font" type="italicSystem" pointSize="16"/>
+                        </label>
+                        <label width="136" height="28" alignment="center" text="B U D I" textAlignment="center" id="g6J-eQ-XMh">
+                            <color key="textColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                        <separator alignment="left" id="PBK-EC-bc2"/>
+                        <button width="1" alignment="left" title="Click to Begin" id="kFM-D5-usw">
+                            <connections>
+                                <action selector="openMainMenu" destination="AgC-eL-Hgc" id="dLl-l1-qLb"/>
+                                <segue destination="v5y-ns-iE6" kind="push" id="2hG-FZ-YKn"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="send to iphone" id="Qf8-qg-4M0">
+                            <connections>
+                                <action selector="tapSendToiPhone" destination="AgC-eL-Hgc" id="5AD-Ye-n45"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="data reset" id="pUY-jk-VYh">
+                            <connections>
+                                <action selector="tapResetDataiPhone" destination="AgC-eL-Hgc" id="S1k-hy-bbJ"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="label" destination="MVp-Bv-Vxk" id="egx-p7-3Uq"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="169" y="142"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label width="136" height="27" alignment="left" text="Static Notification?" numberOfLines="0" id="IdU-wH-bcW">
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                        </label>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="219.69230769230771" y="642.94871794871801"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="BUDI_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="136" height="27" alignment="left" text="Great Work Today!" numberOfLines="0" id="dA2-uW-Fdz">
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                        </label>
+                        <label alignment="left" text="Keep reaching for a healthier you" numberOfLines="2" id="aSK-Oo-bC0"/>
+                    </items>
+                    <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="bodyLabel" destination="aSK-Oo-bC0" id="jLc-XT-8r1"/>
+                        <outlet property="titleLabel" destination="dA2-uW-Fdz" id="Exl-Yg-Sia"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="579" y="673"/>
+        </scene>
+        <!--mainMenu-->
+        <scene sceneID="BLZ-Zg-jh5">
+            <objects>
+                <controller identifier="mainMenu" id="v5y-ns-iE6" customClass="InterfaceController" customModule="BUDI_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="136" height="37" alignment="center" text="B U D I" textAlignment="center" id="NcP-2W-Tz3">
+                            <color key="textColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                        <separator alignment="left" id="M6e-Z8-6oG"/>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Send to iPhone" id="V5U-XQ-wQt">
+                            <color key="titleColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="tapSendToiPhone" destination="AgC-eL-Hgc" id="h2W-uP-Ueg"/>
+                            </connections>
+                        </button>
+                        <label width="136" height="24" alignment="center" text="Main Menu" textAlignment="center" baselineAdjustment="alignCenters" id="p0X-SX-okl">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="font" type="italicSystem" pointSize="16"/>
+                        </label>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Data Reset" id="ryU-uw-Gys">
+                            <color key="titleColor" red="0.84465640779999995" green="0.51457053419999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="tapResetDataiPhone" destination="AgC-eL-Hgc" id="POK-Dr-PMT"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Begin Notifications" id="lUh-qM-m7X">
+                            <color key="titleColor" red="0.45085787770000002" green="0.98829740290000001" blue="0.83763033149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="beginNoti" destination="v5y-ns-iE6" id="c31-ld-hvf"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Stop Notifications" id="I7G-pu-FRd">
+                            <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="stopNoti" destination="v5y-ns-iE6" id="ory-FG-WDe"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Accelerate Data" id="u5Y-PM-sim">
+                            <connections>
+                                <segue destination="fnT-e5-xhB" kind="push" id="12g-gS-Fz0"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="446.35897435897436" y="49.256410256410263"/>
+        </scene>
+        <!--FDS-->
+        <scene sceneID="Niz-AI-uX2">
+            <objects>
+                <controller title="FDS" id="eXb-UN-Cd0" customClass="NotificationController" customModule="BUDI_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="533" y="366"/>
+        </scene>
+        <!--dataMenu-->
+        <scene sceneID="q3n-3p-EFL">
+            <objects>
+                <controller identifier="dataMenu" id="fnT-e5-xhB" customClass="InterfaceController" customModule="BUDI_WatchKit_Extension">
+                    <items>
+                        <label width="136" height="25" alignment="left" text="Data to come" id="bEu-ex-I6y"/>
+                        <button width="1" alignment="left" title="Begin Data Collect" id="1x1-cY-cdD">
+                            <connections>
+                                <action selector="beginData" destination="fnT-e5-xhB" id="cN5-Aq-nUP"/>
+                            </connections>
+                        </button>
+                        <group width="136" height="85" alignment="left" id="z1c-no-dml">
+                            <items>
+                                <textField width="71" alignment="left" text="x data:" id="aFV-Fk-4hr" userLabel="xdatashow" colorLabel="IBBuiltInLabel-Red"/>
+                                <textField width="83" height="39" alignment="left" accessibilityLabel="y data:" text="y data:" id="fxf-3Q-JJJ" userLabel="ydatashow"/>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="818.61538461538464" y="40.53846153846154"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="rehabImage" width="276" height="276"/>
+    </resources>
+</document>

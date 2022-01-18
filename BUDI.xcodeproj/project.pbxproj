@@ -1,0 +1,634 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		901ADEFA25E3224100E52253 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901ADEF925E3224100E52253 /* AppDelegate.swift */; };
+		901ADEFC25E3224100E52253 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901ADEFB25E3224100E52253 /* SceneDelegate.swift */; };
+		901ADEFE25E3224100E52253 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901ADEFD25E3224100E52253 /* ViewController.swift */; };
+		901ADF0125E3224100E52253 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 901ADEFF25E3224100E52253 /* Main.storyboard */; };
+		901ADF0325E3224400E52253 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 901ADF0225E3224400E52253 /* Assets.xcassets */; };
+		901ADF0625E3224400E52253 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 901ADF0425E3224400E52253 /* LaunchScreen.storyboard */; };
+		901ADF0B25E3224500E52253 /* BUDI WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 901ADF0A25E3224400E52253 /* BUDI WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		901ADF1125E3224500E52253 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 901ADF0F25E3224500E52253 /* Interface.storyboard */; };
+		901ADF1325E3224700E52253 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 901ADF1225E3224700E52253 /* Assets.xcassets */; };
+		901ADF1A25E3224700E52253 /* BUDI WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 901ADF1925E3224700E52253 /* BUDI WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		901ADF1F25E3224700E52253 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901ADF1E25E3224700E52253 /* InterfaceController.swift */; };
+		901ADF2125E3224700E52253 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901ADF2025E3224700E52253 /* ExtensionDelegate.swift */; };
+		901ADF2325E3224700E52253 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901ADF2225E3224700E52253 /* NotificationController.swift */; };
+		901ADF2525E3224900E52253 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 901ADF2425E3224900E52253 /* Assets.xcassets */; };
+		903A25EC25F482F100AC40CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 901ADF1225E3224700E52253 /* Assets.xcassets */; };
+		903A25ED25F482F100AC40CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 901ADF1225E3224700E52253 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		901ADF0C25E3224500E52253 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 901ADEEE25E3224100E52253 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 901ADF0925E3224400E52253;
+			remoteInfo = "TransferDataPhoneWatchFeb WatchKit App";
+		};
+		901ADF1B25E3224700E52253 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 901ADEEE25E3224100E52253 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 901ADF1825E3224700E52253;
+			remoteInfo = "TransferDataPhoneWatchFeb WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		901ADF2D25E3224900E52253 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				901ADF1A25E3224700E52253 /* BUDI WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		901ADF3125E3224900E52253 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				901ADF0B25E3224500E52253 /* BUDI WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		901ADEF625E3224100E52253 /* BUDI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BUDI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		901ADEF925E3224100E52253 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		901ADEFB25E3224100E52253 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		901ADEFD25E3224100E52253 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		901ADF0025E3224100E52253 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		901ADF0225E3224400E52253 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		901ADF0525E3224400E52253 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		901ADF0725E3224400E52253 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		901ADF0A25E3224400E52253 /* BUDI WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BUDI WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		901ADF1025E3224500E52253 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		901ADF1225E3224700E52253 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		901ADF1425E3224700E52253 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		901ADF1925E3224700E52253 /* BUDI WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BUDI WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		901ADF1E25E3224700E52253 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		901ADF2025E3224700E52253 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		901ADF2225E3224700E52253 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		901ADF2425E3224900E52253 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		901ADF2625E3224900E52253 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		901ADF2725E3224900E52253 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		901ADEF325E3224100E52253 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		901ADF1625E3224700E52253 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		901ADEED25E3224100E52253 = {
+			isa = PBXGroup;
+			children = (
+				901ADEF825E3224100E52253 /* BUDI */,
+				901ADF0E25E3224500E52253 /* BUDI WatchKit App */,
+				901ADF1D25E3224700E52253 /* BUDI WatchKit Extension */,
+				901ADEF725E3224100E52253 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		901ADEF725E3224100E52253 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				901ADEF625E3224100E52253 /* BUDI.app */,
+				901ADF0A25E3224400E52253 /* BUDI WatchKit App.app */,
+				901ADF1925E3224700E52253 /* BUDI WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		901ADEF825E3224100E52253 /* BUDI */ = {
+			isa = PBXGroup;
+			children = (
+				901ADEF925E3224100E52253 /* AppDelegate.swift */,
+				901ADEFB25E3224100E52253 /* SceneDelegate.swift */,
+				901ADEFD25E3224100E52253 /* ViewController.swift */,
+				901ADEFF25E3224100E52253 /* Main.storyboard */,
+				901ADF0225E3224400E52253 /* Assets.xcassets */,
+				901ADF0425E3224400E52253 /* LaunchScreen.storyboard */,
+				901ADF0725E3224400E52253 /* Info.plist */,
+			);
+			path = BUDI;
+			sourceTree = "<group>";
+		};
+		901ADF0E25E3224500E52253 /* BUDI WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				901ADF0F25E3224500E52253 /* Interface.storyboard */,
+				901ADF1225E3224700E52253 /* Assets.xcassets */,
+				901ADF1425E3224700E52253 /* Info.plist */,
+			);
+			path = "BUDI WatchKit App";
+			sourceTree = "<group>";
+		};
+		901ADF1D25E3224700E52253 /* BUDI WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				901ADF1E25E3224700E52253 /* InterfaceController.swift */,
+				901ADF2025E3224700E52253 /* ExtensionDelegate.swift */,
+				901ADF2225E3224700E52253 /* NotificationController.swift */,
+				901ADF2425E3224900E52253 /* Assets.xcassets */,
+				901ADF2625E3224900E52253 /* Info.plist */,
+				901ADF2725E3224900E52253 /* PushNotificationPayload.apns */,
+			);
+			path = "BUDI WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		901ADEF525E3224100E52253 /* BUDI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 901ADF3225E3224900E52253 /* Build configuration list for PBXNativeTarget "BUDI" */;
+			buildPhases = (
+				901ADEF225E3224100E52253 /* Sources */,
+				901ADEF325E3224100E52253 /* Frameworks */,
+				901ADEF425E3224100E52253 /* Resources */,
+				901ADF3125E3224900E52253 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				901ADF0D25E3224500E52253 /* PBXTargetDependency */,
+			);
+			name = BUDI;
+			productName = TransferDataPhoneWatchFeb;
+			productReference = 901ADEF625E3224100E52253 /* BUDI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		901ADF0925E3224400E52253 /* BUDI WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 901ADF2E25E3224900E52253 /* Build configuration list for PBXNativeTarget "BUDI WatchKit App" */;
+			buildPhases = (
+				901ADF0825E3224400E52253 /* Resources */,
+				901ADF2D25E3224900E52253 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				901ADF1C25E3224700E52253 /* PBXTargetDependency */,
+			);
+			name = "BUDI WatchKit App";
+			productName = "TransferDataPhoneWatchFeb WatchKit App";
+			productReference = 901ADF0A25E3224400E52253 /* BUDI WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		901ADF1825E3224700E52253 /* BUDI WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 901ADF2A25E3224900E52253 /* Build configuration list for PBXNativeTarget "BUDI WatchKit Extension" */;
+			buildPhases = (
+				901ADF1525E3224700E52253 /* Sources */,
+				901ADF1625E3224700E52253 /* Frameworks */,
+				901ADF1725E3224700E52253 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BUDI WatchKit Extension";
+			productName = "TransferDataPhoneWatchFeb WatchKit Extension";
+			productReference = 901ADF1925E3224700E52253 /* BUDI WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		901ADEEE25E3224100E52253 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Blynn L Shideler";
+				TargetAttributes = {
+					901ADEF525E3224100E52253 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					901ADF0925E3224400E52253 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					901ADF1825E3224700E52253 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = 901ADEF125E3224100E52253 /* Build configuration list for PBXProject "BUDI" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 901ADEED25E3224100E52253;
+			productRefGroup = 901ADEF725E3224100E52253 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				901ADEF525E3224100E52253 /* BUDI */,
+				901ADF0925E3224400E52253 /* BUDI WatchKit App */,
+				901ADF1825E3224700E52253 /* BUDI WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		901ADEF425E3224100E52253 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				901ADF0625E3224400E52253 /* LaunchScreen.storyboard in Resources */,
+				901ADF0325E3224400E52253 /* Assets.xcassets in Resources */,
+				903A25EC25F482F100AC40CC /* Assets.xcassets in Resources */,
+				901ADF0125E3224100E52253 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		901ADF0825E3224400E52253 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				901ADF1325E3224700E52253 /* Assets.xcassets in Resources */,
+				901ADF1125E3224500E52253 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		901ADF1725E3224700E52253 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				903A25ED25F482F100AC40CC /* Assets.xcassets in Resources */,
+				901ADF2525E3224900E52253 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		901ADEF225E3224100E52253 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				901ADEFE25E3224100E52253 /* ViewController.swift in Sources */,
+				901ADEFA25E3224100E52253 /* AppDelegate.swift in Sources */,
+				901ADEFC25E3224100E52253 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		901ADF1525E3224700E52253 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				901ADF2325E3224700E52253 /* NotificationController.swift in Sources */,
+				901ADF2125E3224700E52253 /* ExtensionDelegate.swift in Sources */,
+				901ADF1F25E3224700E52253 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		901ADF0D25E3224500E52253 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 901ADF0925E3224400E52253 /* BUDI WatchKit App */;
+			targetProxy = 901ADF0C25E3224500E52253 /* PBXContainerItemProxy */;
+		};
+		901ADF1C25E3224700E52253 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 901ADF1825E3224700E52253 /* BUDI WatchKit Extension */;
+			targetProxy = 901ADF1B25E3224700E52253 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		901ADEFF25E3224100E52253 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				901ADF0025E3224100E52253 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		901ADF0425E3224400E52253 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				901ADF0525E3224400E52253 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		901ADF0F25E3224500E52253 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				901ADF1025E3224500E52253 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		901ADF2825E3224900E52253 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		901ADF2925E3224900E52253 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		901ADF2B25E3224900E52253 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C5HKYY287A;
+				INFOPLIST_FILE = "BUDI WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = blynns.BUDI.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		901ADF2C25E3224900E52253 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C5HKYY287A;
+				INFOPLIST_FILE = "BUDI WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = blynns.BUDI.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		901ADF2F25E3224900E52253 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C5HKYY287A;
+				IBSC_MODULE = BUDI_WatchKit_Extension;
+				INFOPLIST_FILE = "BUDI WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = blynns.BUDI.watchkitapp;
+				PRODUCT_NAME = "BUDI WatchKit App";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		901ADF3025E3224900E52253 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C5HKYY287A;
+				IBSC_MODULE = BUDI_WatchKit_Extension;
+				INFOPLIST_FILE = "BUDI WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = blynns.BUDI.watchkitapp;
+				PRODUCT_NAME = "BUDI WatchKit App";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		901ADF3325E3224900E52253 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C5HKYY287A;
+				INFOPLIST_FILE = BUDI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = blynns.BUDI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		901ADF3425E3224900E52253 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C5HKYY287A;
+				INFOPLIST_FILE = BUDI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = blynns.BUDI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		901ADEF125E3224100E52253 /* Build configuration list for PBXProject "BUDI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				901ADF2825E3224900E52253 /* Debug */,
+				901ADF2925E3224900E52253 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		901ADF2A25E3224900E52253 /* Build configuration list for PBXNativeTarget "BUDI WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				901ADF2B25E3224900E52253 /* Debug */,
+				901ADF2C25E3224900E52253 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		901ADF2E25E3224900E52253 /* Build configuration list for PBXNativeTarget "BUDI WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				901ADF2F25E3224900E52253 /* Debug */,
+				901ADF3025E3224900E52253 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		901ADF3225E3224900E52253 /* Build configuration list for PBXNativeTarget "BUDI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				901ADF3325E3224900E52253 /* Debug */,
+				901ADF3425E3224900E52253 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 901ADEEE25E3224100E52253 /* Project object */;
+}
